@@ -14,11 +14,14 @@
 #include <winrt/Windows.UI.Xaml.Documents.h>
 #include <winrt/Windows.UI.Xaml.Controls.h>
 
+#include "winrt/Microsoft.UI.Xaml.Core.Direct.h"
+
 namespace winrt {
 using namespace Windows::UI;
 using namespace Windows::UI::Xaml;
 using namespace Windows::UI::Xaml::Controls;
 using namespace Windows::UI::Xaml::Documents;
+using namespace Microsoft::UI::Xaml::Core::Direct;
 }
 
 namespace react { namespace uwp {
@@ -48,9 +51,9 @@ const char* TextViewManager::GetName() const
 
 XamlView TextViewManager::CreateViewCore(int64_t tag)
 {
-  auto textBlock = winrt::TextBlock();
-  textBlock.TextWrapping(winrt::TextWrapping::Wrap); // Default behavior in React Native
-  return textBlock;
+  auto textBlock = winrt::XamlDirect::GetDefault().CreateInstance(winrt::XamlTypeIndex::TextBlock);
+  winrt::XamlDirect::GetDefault().SetEnumProperty(textBlock, winrt::XamlPropertyIndex::TextBlock_TextWrapping, (uint32_t)(winrt::TextWrapping::Wrap)); // Default behavior in React Native
+  return winrt::XamlDirect::GetDefault().GetObject(textBlock).as<winrt::TextBlock>();
 }
 
 void TextViewManager::UpdateProperties(ShadowNodeBase* nodeToUpdate, folly::dynamic reactDiffMap)
