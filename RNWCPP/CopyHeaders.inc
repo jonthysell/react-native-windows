@@ -992,6 +992,7 @@ COPYFILES_PASS0 = \
 	ReactWindows\include\ReactUWP\ReactRootView.h, ReactUWP; \
 	ReactWindows\include\ReactUWP\ReactUwp.h, ReactUWP; \
 	ReactWindows\include\ReactUWP\XamlView.h, ReactUWP; \
+	ReactWindows\include\ReactUWP\XamlDirectView.h, ReactUWP; \
 	ReactWindows\include\ReactUWP\ViewManagerProvider.h, ReactUWP; \
 
 
