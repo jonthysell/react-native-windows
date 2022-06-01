@@ -2000,12 +2000,12 @@
     workspace-tools "^0.18.3"
 
 "@rnx-kit/metro-plugin-duplicates-checker@^1.2.15":
-  version "1.2.15"
-  resolved "https://registry.yarnpkg.com/@rnx-kit/metro-plugin-duplicates-checker/-/metro-plugin-duplicates-checker-1.2.15.tgz#7015c4cba99b4505346d4aa70779b85f693bebfd"
-  integrity sha512-g4zOW6b5W30wWq9dh9XxzdYjIeqv6xgrPKtxoSYh4qpOYSw5JbMLaLF0+zyKmvy+db+xfBNhFZPfVaKmCo6g+Q==
+  version "1.2.16"
+  resolved "https://registry.yarnpkg.com/@rnx-kit/metro-plugin-duplicates-checker/-/metro-plugin-duplicates-checker-1.2.16.tgz#5e20e17e53ed6ca5a613978be325abf1bc826905"
+  integrity sha512-fcXQbmDA7es7aSqZH0whVXyoPGgA7yy8I8193K18TRCHF6U1LoK/ZnjHAaHTzrcyq2NhrpwkDWwFoDTCFjYWjw==
   dependencies:
     "@rnx-kit/console" "^1.0.11"
-    "@rnx-kit/tools-node" "^1.2.6"
+    "@rnx-kit/tools-node" "^1.2.7"
 
 "@rnx-kit/metro-serializer@^1.0.11":
   version "1.0.11"
@@ -2019,7 +2019,7 @@
   resolved "https://registry.yarnpkg.com/@rnx-kit/tools-language/-/tools-language-1.2.6.tgz#ced63a53ce9821d14acb57a927237e5c39801387"
   integrity sha512-8pq4JlFIkOqjwkN6amYebQ2CTAa1EeYjSBurGh8upYZtqUZBXDOK7FUAx+OVHs/7qQfmF2lU7QpqA7DZGv4xJA==
 
-"@rnx-kit/tools-node@^1.2.6", "@rnx-kit/tools-node@^1.2.7":
+"@rnx-kit/tools-node@^1.2.7":
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/@rnx-kit/tools-node/-/tools-node-1.2.7.tgz#ae702763d26fc9b5a0984c5fddd90e38e03b06a1"
   integrity sha512-vgURBJttO8z1nSrJm3KWgzEO3/oat5Rn/Fx2b9XyEf7y2CzJh1fwf48XddDnzmSKFNd/SihP7hDcVcEqZ/evCQ==
@@ -6142,14 +6142,14 @@ glob-to-regexp@^0.3.0:
   integrity sha1-jFoUlNIGbFcMw7/kSWF1rMTVAqs=
 
 glob@^7.0.0, glob@^7.1.1, glob@^7.1.2, glob@^7.1.3, glob@^7.1.4, glob@^7.1.6, glob@^7.2.0:
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/glob/-/glob-7.2.0.tgz#d15535af7732e02e948f4c41628bd910293f6023"
-  integrity sha512-lmLf6gtyrPq8tTjSmrO94wBeQbFR3HbLHbuyD69wuyQkImp2hWqMGB47OX65FBkPffO641IP9jWa1z4ivqG26Q==
+  version "7.2.3"
+  resolved "https://registry.yarnpkg.com/glob/-/glob-7.2.3.tgz#b8df0fb802bbfa8e89bd1d938b4e16578ed44f2b"
+  integrity sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==
   dependencies:
     fs.realpath "^1.0.0"
     inflight "^1.0.4"
     inherits "2"
-    minimatch "^3.0.4"
+    minimatch "^3.1.1"
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
@@ -7812,9 +7812,9 @@ kleur@^3.0.2, kleur@^3.0.3:
   integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
 
 lage@^1.5.0:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/lage/-/lage-1.5.1.tgz#6bdbdd6726c736bbef269d15073541a6bdfcf1e6"
-  integrity sha512-0zvD2z8Etc+LenWdj7sxwM9RE0p2TzkG3QixK2Ll0ttF9HAWrE87ULjy8G8OZsqbKzOzQSi06wsPAfAtpN6MLQ==
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/lage/-/lage-1.5.2.tgz#aaa6d461f02affe9ca54caf9ed4268c60e91301e"
+  integrity sha512-uUd54MFGNZ2Pj0o0sGoIFKiABVKfWiuH9Pap4hKcUHJeso5uZC4XS0werFXwAK9HkMIkiBrCnrbo7Y/D5tHjOQ==
   dependencies:
     "@xmldom/xmldom" "^0.8.0"
     abort-controller "^3.0.0"
@@ -8689,7 +8689,7 @@ mimic-response@^3.1.0:
   resolved "https://registry.yarnpkg.com/mimic-response/-/mimic-response-3.1.0.tgz#2d1d59af9c1b129815accc2c46a022a5ce1fa3c9"
   integrity sha512-z0yWI+4FDrrweS8Zmt4Ej5HdJmky15+L2e6Wgn3+iK5fWzb6T3fhNFq2+MeTRb064c6Wr4N/wv0DzQTjNzHNGQ==
 
-minimatch@^3.0.2, minimatch@^3.0.4, minimatch@^3.1.2:
+minimatch@^3.0.2, minimatch@^3.0.4, minimatch@^3.1.1, minimatch@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.1.2.tgz#19cd194bfd3e428f049a70817c038d89ab4be35b"
   integrity sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==
