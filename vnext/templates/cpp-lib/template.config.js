@@ -75,6 +75,8 @@ async function getFileMappings(config = {}, options = {}) {
     options,
   );
 
+  const libPkgJson = require(path.join(libConfig.root, 'package.json'));
+
   const {rnwVersion, devMode} = templateUtils.getRnwInfo(libConfig, libOptions);
 
   const projectName =
@@ -90,6 +92,12 @@ async function getFileMappings(config = {}, options = {}) {
   const currentUser = username.sync(); // Gets the current username depending on the platform.
 
   const cppNugetPackages = [];
+
+  const codeGenName = libPkgJson.codegenConfig.name;
+  const codeGenType = libPkgJson.codegenConfig.type;
+  const libHasModules = codeGenType === 'all' || codeGenType === 'modules';
+  const libHasComponents =
+    codeGenType === 'all' || codeGenType === 'components';
 
   const replacements = {
     useMustache: true,
@@ -113,6 +121,10 @@ async function getFileMappings(config = {}, options = {}) {
     devMode,
 
     cppNugetPackages,
+
+    codeGenName,
+    libHasModules,
+    libHasComponents,
   };
 
   let fileMappings = [];

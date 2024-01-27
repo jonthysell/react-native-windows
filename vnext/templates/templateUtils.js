@@ -23,7 +23,7 @@ function getRnwInfo(config = {}, options = {}) {
   const projectRoot = config?.root ?? process.cwd();
 
   const rnwPath = path.dirname(
-    require.resolve('react-native-windows', [projectRoot]),
+    require.resolve('react-native-windows', {paths: [projectRoot]}),
   );
 
   const rnwVersion = require(path.join(rnwPath, 'package.json')).version;

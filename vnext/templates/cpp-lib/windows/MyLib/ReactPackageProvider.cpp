@@ -5,6 +5,8 @@
 #include "ReactPackageProvider.g.cpp"
 #endif
 
+#include "NativeModules.h"
+
 #include "{{ name }}.h"
 
 using namespace winrt::Microsoft::ReactNative;

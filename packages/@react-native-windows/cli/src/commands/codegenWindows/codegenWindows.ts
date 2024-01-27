@@ -59,7 +59,11 @@ export class CodeGenWindows {
     }
 
     const codegenConfigType = pkgJson.codegenConfig.type;
-    if (codegenConfigType !== 'modules' && codegenConfigType !== 'all') {
+    if (
+      codegenConfigType !== 'modules' &&
+      codegenConfigType !== 'components' &&
+      codegenConfigType !== 'all'
+    ) {
       spinner.info(
         `${chalk.bold(
           'codegenConfig.type',
