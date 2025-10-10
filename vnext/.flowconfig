@@ -10,7 +10,7 @@
 ; These modules have base components and Windows versions.
 ; Ideally we'd delete the base versions of files that had .windows overrides as part of the
 ; initRNLibraries build step
-<PROJECT_ROOT>/index.js
+<PROJECT_ROOT>/index.js!(.flow)
 <PROJECT_ROOT>/Libraries/Alert/Alert.js
 <PROJECT_ROOT>/Libraries/Components/Button.js
 <PROJECT_ROOT>/Libraries/Components/Picker/RCTPickerNativeComponent.js
@@ -27,11 +27,10 @@
 <PROJECT_ROOT>/Libraries/Components/View/ViewPropTypes.js
 <PROJECT_ROOT>/Libraries/Components/View/View.js
 <PROJECT_ROOT>/Libraries/DeprecatedPropTypes/DeprecatedViewAccessibility.js
-<PROJECT_ROOT>/Libraries/Image/Image.js
+<PROJECT_ROOT>/Libraries/Image/Image.js!(.flow)
 <PROJECT_ROOT>/Libraries/Image/resolveAssetSource.js
 <PROJECT_ROOT>/Libraries/Network/RCTNetworking.js
 <PROJECT_ROOT>/Libraries/Pressability/Pressability.js
-<PROJECT_ROOT>/Libraries/Renderer/shims/ReactNativeTypes.js
 <PROJECT_ROOT>/Libraries/Text/TextProps.js
 <PROJECT_ROOT>/Libraries/Types/CoreEventTypes.js
 <PROJECT_ROOT>/Libraries/LogBox/UI/LogBoxInspectorCodeFrame.js

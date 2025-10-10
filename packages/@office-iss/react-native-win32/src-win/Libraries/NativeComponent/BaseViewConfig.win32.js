@@ -353,7 +353,9 @@ const validAttributesForNonEventProps = {
 } as const;
 
 // Props for bubbling and direct events
-const validAttributesForEventProps = ConditionallyIgnoredEventHandlers({
+// [Windows
+const validAttributesForEventProps = {
+  // Windows]
   onLayout: true,
   onMagicTap: true,
 
@@ -396,7 +398,9 @@ const validAttributesForEventProps = ConditionallyIgnoredEventHandlers({
   onPointerOut: true,
   onGotPointerCapture: true,
   onLostPointerCapture: true,
-});
+  // [Windows
+} as const;
+// Windows]
 
 /**
  * On iOS, view managers define all of a component's props.

@@ -54,11 +54,16 @@ exports.copyTask = baseDir => {
       dest: base('src'),
     }),
     copyTask({
-      paths: reactNative('index.js', 'interface.js', 'rn-get-polyfills.js'),
+      paths: reactNative(
+        'index.js',
+        'index.js.flow',
+        'interface.js',
+        'rn-get-polyfills.js',
+      ),
       dest: base('.'),
     }),
 
-    copyTask({paths: src('**/*+(.d.ts|.js|.png)'), dest: base('.')}),
+    copyTask({paths: src('**/*+(.d.ts|.js|.png|.flow)'), dest: base('.')}),
 
     () => {
       const typesPath = path.resolve(baseDir, 'types/index.d.ts');
